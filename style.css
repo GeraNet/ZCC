@@ -1,0 +1,183 @@
+body{
+margin:0;
+font-family:Arial;
+background:#0b0f14;
+color:white;
+overflow-x:hidden;
+}
+
+.topbar{
+display:flex;
+justify-content:space-between;
+padding:20px;
+background:#0f141b;
+border-bottom:1px solid #1f2a36;
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
+}
+
+.logo{
+color:#ff7a00;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+margin-left:15px;
+text-decoration:none;
+}
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+position:relative;
+padding:20px;
+}
+
+.grid-overlay{
+position:absolute;
+width:100%;
+height:100%;
+background-image:
+linear-gradient(rgba(255,122,0,0.05) 1px, transparent 1px),
+linear-gradient(90deg, rgba(255,122,0,0.05) 1px, transparent 1px);
+background-size:40px 40px;
+}
+
+.hero-content{
+z-index:2;
+max-width:800px;
+}
+
+.status{
+color:#00ff88;
+margin-bottom:10px;
+}
+
+h1{
+font-size:48px;
+margin:10px 0;
+}
+
+.subtitle{
+color:#cfcfcf;
+font-size:18px;
+}
+
+.hero-buttons button{
+margin:10px;
+padding:12px 25px;
+border:none;
+cursor:pointer;
+font-weight:bold;
+border-radius:8px;
+}
+
+.hero-buttons button{
+background:#ff7a00;
+color:black;
+}
+
+.hero-buttons .secondary{
+background:#1f2a36;
+color:white;
+}
+
+.section{
+padding:100px 20px;
+max-width:1100px;
+margin:auto;
+}
+
+.dark{
+background:#0f141b;
+}
+
+h2{
+color:#ff7a00;
+margin-bottom:20px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:#121a23;
+padding:20px;
+border:1px solid #1f2a36;
+border-radius:10px;
+}
+
+.news-item{
+background:#111821;
+border:1px solid #1f2a36;
+padding:20px;
+margin:15px 0;
+border-radius:10px;
+}
+
+ul li{
+margin:8px 0;
+}
+
+.join-box{
+margin-top:20px;
+padding:20px;
+background:#111821;
+border:1px solid #1f2a36;
+border-radius:10px;
+}
+
+.tg-button{
+display:inline-block;
+margin-top:10px;
+padding:12px 20px;
+background:#0088cc;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.tg-button:hover{
+background:#00a2ff;
+transform:scale(1.05);
+}
+
+footer{
+text-align:center;
+padding:40px;
+border-top:1px solid #1f2a36;
+}
+
+.small{
+color:#777;
+font-size:12px;
+}
+
+@media(max-width:768px){
+
+h1{
+font-size:32px;
+}
+
+nav a{
+font-size:14px;
+margin-left:8px;
+}
+
+.hero{
+height:auto;
+padding-top:120px;
+}
+
+}
