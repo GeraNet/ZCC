@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+<meta charset="UTF-8">
+<title>ZSS ADMIN</title>
+
+<style>
+body{
+font-family:Arial;
+background:#0f1418;
+color:#fff;
+padding:30px;
+}
+
+input,textarea{
+width:100%;
+padding:10px;
+margin:10px 0;
+}
+
+button{
+padding:12px;
+background:#1f6f3b;
+color:#fff;
+border:none;
+cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<h1>ADMIN PANEL ZSS</h1>
+
+<p>Встав GitHub токен (зберігається тільки в цьому браузері)</p>
+
+<input id="token" placeholder="GitHub Token">
+<button onclick="saveToken()">Зберегти</button>
+
+<hr>
+
+<input id="title" placeholder="Заголовок">
+<textarea id="text" placeholder="Текст"></textarea>
+
+<button onclick="addNews()">Додати новину</button>
+
+<script>
+
+const repo="YOUR_USERNAME/YOUR_REPO";
+const file="news.json";
+
+function saveToken(){
+localStorage.setItem("token",document.getElementById("token").value);
+alert("Збережено");
+}
+
+async function addNews(){
+
+const token=localStorage.getItem("token");
+
+if(!token){
+alert("Нема токена");
+return;
+}
+
+const title=document.getElementById("title").value;
+const text=document.getElementById("text").value;
+
+const res=await fetch(`https://api.github.com/repos/${repo}/contents/${file}`);
+const data=await res.json();
+
+const json=JSON.parse(atob(data.content));
+
+json.unshift({title,text});
+
+const updated=btoa(JSON.stringify(json,null,2));
+
+await fetch(`https://api.github.com/repos/${repo}/contents/${file}`,{
+method:"PUT",
+headers:{
+"Authorization":"Bearer "+token,
+"Content-Type":"application/json"
+},
+body:JSON.stringify({
+message:"update news",
+content:updated,
+sha:data.sha
+})
+});
+
+alert("Готово!");
+}
+
+</script>
+
+</body>
+</html>
