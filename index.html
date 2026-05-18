@@ -2,242 +2,133 @@
 <html lang="uk">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ЗСС | Штабна система</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<title>ЗСС | Штабний портал</title>
 
 <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
-<div class="noise"></div>
-<div class="grid"></div>
+<header class="header">
 
-<header class="topbar">
-
-<div class="logo">
-<div class="logo-dot"></div>
-<div>
-<div class="logo-title">ЗСС</div>
-<div class="logo-sub">ШТАБНА СИСТЕМА</div>
-</div>
-</div>
+<div class="logo">ЗСС — ШТАБ</div>
 
 <nav>
-<a href="#about">ПРО</a>
-<a href="#units">СТРУКТУРА</a>
-<a href="#news">НОВИНИ</a>
-<a href="#command">КЕРІВНИЦТВО</a>
-<a href="#join">ВСТУП</a>
+<a href="#about">Про</a>
+<a href="#units">Підрозділи</a>
+<a href="#news">Новини</a>
+<a href="#command">Керівництво</a>
+<a href="#join">Вступ</a>
 </nav>
 
 </header>
 
 <section class="hero">
 
-<div class="hero-left">
+<div class="hero-inner">
 
-<div class="hero-status">● ОФІЦІЙНА СИСТЕМА ЗСС</div>
+<div class="tag">ОФІЦІЙНИЙ ШТАБОВИЙ ПОРТАЛ</div>
 
 <h1>ЗБРОЙНІ СИЛИ СЕРВЕРА</h1>
 
 <p>
-ЗСС — структурована військова система серверного середовища, що об'єднує гравців у бригади, підрозділи та штабну структуру управління.
+ЗСС — структурована система підрозділів серверного середовища з командною ієрархією, логістикою та внутрішнім управлінням.
 </p>
 
-<div class="hero-buttons">
-<button class="primary" onclick="goTo('units')">СТРУКТУРА</button>
-<button class="secondary" onclick="goTo('join')">ВСТУП</button>
-</div>
-
-</div>
-
-<div class="hero-right">
-
-<div class="hud-box">
-
-<div class="hud-title">СТАТУС</div>
-
-<div class="hud-item"><span>СТАН</span> АКТИВНО</div>
-<div class="hud-item"><span>БРИГАД</span> 8</div>
-<div class="hud-item"><span>РЕЖИМ</span> ШТАБНИЙ</div>
-
-</div>
+<a class="btn" href="#join">ПРИЄДНАТИСЯ</a>
 
 </div>
 
 </section>
 
-<section class="section" id="about">
+<section id="about" class="section">
 
-<div class="section-header">
-<div class="line"></div>
-<span>ІНФОРМАЦІЯ</span>
-</div>
-
-<h2>ПРО ЗСС</h2>
+<h2>Про організацію</h2>
 
 <p>
-ЗСС — це серверна військова структура з бригадами, підрозділами та командною системою управління.
+ЗСС — це організована структура, що включає бойові, розвідувальні, медичні та підтримуючі підрозділи.
 </p>
-
-</section>
-
-<section class="section dark" id="units">
-
-<div class="section-header">
-<div class="line"></div>
-<span>СТРУКТУРА</span>
-</div>
-
-<h2>БРИГАДИ ТА ПІДРОЗДІЛИ</h2>
 
 <p>
-Структура поділяється на активні та резервні підрозділи.
+Мета системи — координація учасників, структурована взаємодія та розвиток внутрішньої організації.
 </p>
 
-<div class="category-title">АКТИВНІ БРИГАДИ</div>
+</section>
 
-<div class="unit-grid">
+<section id="units" class="section gray">
 
-<div class="unit-card">
-<div class="unit-status active"></div>
-<h3>1 ОШБ ПАШ</h3>
-<p>Активний штурмовий підрозділ</p>
-</div>
+<h2>Структура підрозділів</h2>
 
-<div class="unit-card">
-<div class="unit-status active"></div>
-<h3>ПР</h3>
-<p>Розвідка</p>
-</div>
+<div class="grid-title">АКТИВНІ ПІДРОЗДІЛИ</div>
 
-<div class="unit-card">
-<div class="unit-status active"></div>
-<h3>ППШ</h3>
-<p>Пасивний штурм</p>
-</div>
+<div class="grid">
 
-<div class="unit-card">
-<div class="unit-status active"></div>
-<h3>ТЦКС</h3>
-<p>Рекрутинг</p>
-</div>
-
-<div class="unit-card">
-<div class="unit-status active"></div>
-<h3>МЕД</h3>
-<p>Медична служба</p>
-</div>
-
-<div class="unit-card">
-<div class="unit-status active"></div>
-<h3>ВОДІЇ</h3>
-<p>Логістика</p>
-</div>
+<div class="card"><h3>1 ОШБ ПАШ</h3><p>Штурмові операції та тактичні задачі.</p></div>
+<div class="card"><h3>ПР</h3><p>Розвідка та інформаційна робота.</p></div>
+<div class="card"><h3>ППШ</h3><p>Пасивні штурмові операції.</p></div>
+<div class="card"><h3>ТЦКС</h3><p>Рекрутинг та набір.</p></div>
+<div class="card"><h3>МЕД</h3><p>Медична підтримка.</p></div>
+<div class="card"><h3>ВОДІЇ</h3><p>Логістика та транспорт.</p></div>
 
 </div>
 
-<div class="category-title">РЕЗЕРВ / НЕАКТИВНІ</div>
+<div class="grid-title">РЕЗЕРВНІ</div>
 
-<div class="unit-grid">
+<div class="grid">
 
-<div class="unit-card inactive">
-<div class="unit-status inactive-dot"></div>
-<h3>ДПСС</h3>
-<p>Прикордонна служба (резерв)</p>
-</div>
-
-<div class="unit-card inactive">
-<div class="unit-status inactive-dot"></div>
-<h3>ПНО</h3>
-<p>Оборонний резерв</p>
-</div>
+<div class="card"><h3>ДПСС</h3><p>Прикордонна служба (резерв).</p></div>
+<div class="card"><h3>ПНО</h3><p>Оборонний резерв.</p></div>
 
 </div>
 
 </section>
 
-<section class="section" id="news">
+<section id="news" class="section">
 
-<div class="section-header">
-<div class="line"></div>
-<span>НОВИНИ</span>
-</div>
+<h2>Новини</h2>
 
-<h2>ОФІЦІЙНІ ОГОЛОШЕННЯ</h2>
-
-<div id="newsContainer">
-
-<!-- НОВИНИ ДОДАЄШ СЮДИ -->
-
-</div>
+<div id="newsContainer"></div>
 
 </section>
 
-<section class="section dark" id="command">
+<section id="command" class="section gray">
 
-<div class="section-header">
-<div class="line"></div>
-<span>КОМАНДУВАННЯ</span>
-</div>
-
-<h2>КЕРІВНИЦТВО</h2>
+<h2>Керівництво</h2>
 
 <p>
-Керівник організації відповідає за загальну структуру та управління.
-Зміна керівництва відбувається через голосування.
+Керівництво здійснює управління структурою та стратегічний розвиток організації.
+Зміна керівника відбувається через голосування.
 </p>
 
-<div class="join-panel">
+<div class="leader">
 
-<div class="join-title">ПОТОЧНИЙ КЕРІВНИК</div>
+Поточний керівник:
 
-<a class="join-btn" href="https://t.me/Duf7484" target="_blank">
-t.me/Duf7484
+<a href="https://t.me/Duf7484" target="_blank">t.me/Duf7484</a>
+
+</div>
+
+</section>
+
+<section id="join" class="section">
+
+<h2>Вступ</h2>
+
+<p>
+Вступ здійснюється через офіційний Telegram-канал.
+</p>
+
+<a class="btn" href="https://t.me/+Wqcpja004VtlMjgy" target="_blank">
+Приєднатися
 </a>
-
-</div>
-
-</section>
-
-<section class="section" id="join">
-
-<div class="section-header">
-<div class="line"></div>
-<span>ВСТУП</span>
-</div>
-
-<h2>ПРИЄДНАННЯ ДО ЗСС</h2>
-
-<p>
-Вступ через Telegram-спільноту.
-</p>
-
-<div class="join-panel">
-
-<div class="join-title">TELEGRAM</div>
-
-<a class="join-btn" href="https://t.me/+Wqcpja004VtlMjgy" target="_blank">
-ВСТУПИТИ
-</a>
-
-</div>
 
 </section>
 
 <footer>
-
-<div class="footer-line"></div>
-
-<div class="footer-text">ЗСС © 2026</div>
-
+© 2026 ЗСС
 </footer>
 
 <script src="script.js"></script>
