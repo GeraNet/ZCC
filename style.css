@@ -1,165 +1,108 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Montserrat,sans-serif;
-}
-
 body{
-background:#050505;
-color:#eafff0;
-overflow-x:hidden;
+margin:0;
+font-family:Arial;
+background:#f4f6f8;
+color:#111;
 }
 
-.noise{
-position:fixed;
-inset:0;
-background:url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
-opacity:0.05;
-pointer-events:none;
-}
-
-.grid{
-position:fixed;
-inset:0;
-background:
-linear-gradient(#0f3 1px,transparent 1px),
-linear-gradient(90deg,#0f3 1px,transparent 1px);
-background-size:60px 60px;
-opacity:0.05;
-}
-
-.topbar{
-position:fixed;
-top:0;
-width:100%;
+.header{
 display:flex;
 justify-content:space-between;
-padding:20px 40px;
-background:#000;
-z-index:1000;
+padding:20px 60px;
+background:#fff;
+border-bottom:1px solid #ddd;
+position:sticky;
+top:0;
 }
 
-.logo-dot{
-width:12px;
-height:12px;
-background:#0f0;
-border-radius:50%;
-}
-
-.logo-title{
+.logo{
 font-weight:900;
 }
 
 nav a{
-color:#aaa;
 margin-left:20px;
 text-decoration:none;
+color:#333;
+font-weight:600;
 }
 
 .hero{
-display:flex;
-justify-content:space-between;
-padding:140px 60px;
+padding:120px 60px;
+background:#e9eef5;
 }
 
 .hero h1{
-font-size:60px;
+font-size:48px;
+margin:10px 0;
 }
 
-.hero-status{
-color:#0f0;
-margin-bottom:20px;
+.tag{
+background:#dfe7f2;
+padding:6px 12px;
+display:inline-block;
+font-size:12px;
+font-weight:700;
 }
 
-button{
-padding:15px 25px;
-border:none;
-cursor:pointer;
-}
-
-.primary{
-background:#0f0;
-color:#000;
-}
-
-.secondary{
-background:none;
-border:1px solid #0f0;
-color:#0f0;
+.btn{
+display:inline-block;
+padding:12px 20px;
+background:#1f3a5f;
+color:#fff;
+text-decoration:none;
+margin-top:20px;
 }
 
 .section{
-padding:100px 60px;
+padding:80px 60px;
+background:#fff;
 }
 
-.dark{
-background:#070707;
+.gray{
+background:#f1f4f8;
 }
 
-.unit-grid{
+.grid-title{
+font-weight:800;
+margin:30px 0 15px;
+border-left:4px solid #1f3a5f;
+padding-left:10px;
+}
+
+.grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
 }
 
-.unit-card{
-background:#0a0a0a;
+.card{
+background:#fff;
+border:1px solid #ddd;
 padding:20px;
-border:1px solid #111;
 }
 
-.unit-status.active{
-width:10px;
-height:10px;
-background:#0f0;
-border-radius:50%;
-}
-
-.unit-status.inactive-dot{
-width:10px;
-height:10px;
-background:#444;
-border-radius:50%;
-}
-
-.category-title{
-margin-top:40px;
-font-size:20px;
-}
-
-.join-panel{
-padding:20px;
-border:1px solid #111;
-margin-top:20px;
-}
-
-.join-btn{
-display:inline-block;
-padding:12px 20px;
-background:#0f0;
-color:#000;
-text-decoration:none;
-}
-
-.footer-text{
+footer{
 text-align:center;
 padding:30px;
-opacity:0.5;
+background:#fff;
+border-top:1px solid #ddd;
 }
 
 @media(max-width:768px){
-.hero{
+.header{
 flex-direction:column;
-padding:120px 20px;
+gap:10px;
+}
+
+.hero{
+padding:90px 20px;
+}
+
+.section{
+padding:60px 20px;
 }
 
 .hero h1{
-font-size:40px;
-}
-
-.topbar{
-flex-direction:column;
-gap:10px;
+font-size:32px;
 }
 }
