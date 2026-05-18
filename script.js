@@ -1,53 +1,26 @@
-function goTo(id){
+fetch("news.json")
+.then(r=>r.json())
+.then(data=>{
 
-document.getElementById(id).scrollIntoView({
-behavior:"smooth"
-});
+const box=document.getElementById("newsContainer");
 
+if(!data.length){
+document.getElementById("news").style.display="none";
+return;
 }
 
-/* AUTO HIDE NEWS */
+data.forEach(n=>{
 
-document.addEventListener("DOMContentLoaded",()=>{
+const div=document.createElement("div");
+div.className="card";
 
-const news =
-document.getElementById("newsContainer");
+div.innerHTML=`
+<h3>${n.title}</h3>
+<p>${n.text}</p>
+`;
 
-if(news.children.length === 0){
-
-document.getElementById("news")
-.style.display="none";
-
-}
+box.appendChild(div);
 
 });
-
-/* SCROLL ANIMATION */
-
-const observer =
-new IntersectionObserver((entries)=>{
-
-entries.forEach(entry=>{
-
-if(entry.isIntersecting){
-
-entry.target.style.opacity="1";
-entry.target.style.transform="translateY(0)";
-
-}
-
-});
-
-});
-
-document.querySelectorAll(
-".section,.unit-card,.hud-box"
-).forEach(el=>{
-
-el.style.opacity="0";
-el.style.transform="translateY(40px)";
-el.style.transition="1s";
-
-observer.observe(el);
 
 });
