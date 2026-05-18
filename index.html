@@ -1,62 +1,153 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ЗСС | Командний Центр</title>
+<title>ЗСС | COMMAND SYSTEM</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
+<div class="noise"></div>
+<div class="grid"></div>
+
 <header class="topbar">
 
 <div class="logo">
-ЗСС // COMMAND HQ
+
+<div class="logo-dot"></div>
+
+<div>
+
+<div class="logo-title">
+ЗСС
+</div>
+
+<div class="logo-sub">
+КОМАНДНА СИСТЕМА
+</div>
+
+</div>
+
 </div>
 
 <nav>
-<a href="#about">Про нас</a>
-<a href="#units">Підрозділи</a>
-<a href="#news">Новини</a>
-<a href="#recruit">Вступ</a>
+
+<a href="#about">ПРО СИСТЕМУ</a>
+<a href="#units">ПІДРОЗДІЛИ</a>
+<a href="#news">НОВИНИ</a>
+<a href="#join">ВСТУП</a>
+
 </nav>
 
 </header>
 
-<!-- HERO -->
 <section class="hero">
 
-<div class="grid-overlay"></div>
+<div class="hero-left">
 
-<div class="hero-content">
-
-<div class="status">
-● СИСТЕМА АКТИВНА | SERVER ONLINE
+<div class="hero-status">
+● SYSTEM ACTIVE
 </div>
 
 <h1>
-КОМАНДНИЙ ЦЕНТР ЗСС
+ЗБРОЙНІ СИЛИ СЕРВЕРА
 </h1>
 
-<p class="subtitle">
+<p>
 
-Військова симуляційна структура серверного середовища,
-що об’єднує гравців для координації, навчань та операцій.
+ЗСС — структурована військова система серверного середовища,
+створена для координації гравців,
+проведення конференцій,
+тактичних тренувань,
+внутрішньої комунікації
+та організованої взаємодії між підрозділами.
+
+Організація моделює реалістичну систему військового управління,
+де кожен учасник має власну роль,
+напрям діяльності,
+структуру підготовки
+та систему координації.
+
+</p>
+
+<p>
+
+Основна діяльність проводиться
+у межах серверного RP-середовища.
+Головний акцент робиться
+на дисципліні,
+командній роботі,
+структурованих тренуваннях,
+конференціях,
+тактичній підготовці
+та розвитку системи підрозділів.
 
 </p>
 
 <div class="hero-buttons">
 
-<button onclick="scrollToSection('units')">
+<button class="primary"
+onclick="goTo('units')">
+
 ПІДРОЗДІЛИ
+
 </button>
 
-<button onclick="scrollToSection('recruit')" class="secondary">
-ВСТУП
+<button class="secondary"
+onclick="goTo('join')">
+
+ПРИЄДНАТИСЬ
+
 </button>
+
+</div>
+
+</div>
+
+<div class="hero-right">
+
+<div class="hud-box">
+
+<div class="hud-title">
+СТАТУС СИСТЕМИ
+</div>
+
+<div class="hud-item">
+<span>SERVER</span>
+ONLINE
+</div>
+
+<div class="hud-item">
+<span>ПІДРОЗДІЛИ</span>
+8 REGISTERED
+</div>
+
+<div class="hud-item">
+<span>КОМУНІКАЦІЯ</span>
+SECURED
+</div>
+
+<div class="hud-item">
+<span>СТАТУС</span>
+TACTICAL
+</div>
+
+<div class="hud-item">
+<span>РЕЖИМ</span>
+RP STRUCTURE
+</div>
 
 </div>
 
@@ -64,124 +155,472 @@
 
 </section>
 
-<!-- ABOUT -->
-<section id="about" class="section">
+<section class="section" id="about">
 
-<h2>ПРО ЗСС</h2>
+<div class="section-header">
+
+<div class="line"></div>
+
+<span>ІНФОРМАЦІЯ</span>
+
+</div>
+
+<h2>
+ПРО ЗСС
+</h2>
 
 <p>
 
-ЗСС — структурована військова система на сервері,
-створена для організації гравців, проведення навчань,
-конференцій та координації підрозділів.
+ЗСС — це масштабна військова структура серверного середовища,
+що об'єднує гравців
+для створення організованої системи взаємодії,
+навчання,
+тактичної координації
+та розвитку внутрішньої системи підрозділів.
 
 </p>
 
 <p>
 
-Уся діяльність відбувається виключно в межах ігрового RP-середовища.
-Організація побудована на дисципліні, взаємодії та структурованому управлінні.
+Організація включає:
+бойові,
+розвідувальні,
+логістичні,
+медичні,
+рекрутингові
+та резервні напрямки діяльності.
+
+Кожен підрозділ має власну структуру,
+внутрішню координацію,
+напрям задач
+та систему взаємодії.
+
+</p>
+
+<p>
+
+Основний акцент робиться
+не на хаотичних діях,
+а на дисципліні,
+структурованих тренуваннях,
+тактичній взаємодії,
+командній роботі
+та RP-координації між учасниками.
+
+</p>
+
+<p>
+
+У межах системи проводяться:
+конференції,
+тренування,
+внутрішні збори,
+координаційні заходи,
+навчання нових учасників
+та розвиток підрозділів організації.
 
 </p>
 
 </section>
 
-<!-- UNITS -->
-<section id="units" class="section dark">
+<section class="section dark" id="units">
 
-<h2>ПІДРОЗДІЛИ</h2>
+<div class="section-header">
 
-<div class="cards">
+<div class="line"></div>
 
-<div class="card">
-<h3>ПАШ</h3>
-<p>Підрозділ активного штурму</p>
+<span>STRUCTURE</span>
+
 </div>
 
-<div class="card">
-<h3>ПР</h3>
-<p>Підрозділ розвідки</p>
+<h2>
+ПІДРОЗДІЛИ ЗСС
+</h2>
+
+<p>
+
+Структура ЗСС складається
+з активних,
+резервних,
+допоміжних
+та спеціалізованих підрозділів.
+
+Підрозділи можуть бути:
+активними,
+неактивними,
+резервними
+або тимчасово реорганізованими
+залежно від поточної структури системи.
+
+</p>
+
+<!-- ACTIVE -->
+
+<div class="category-title">
+
+АКТИВНІ ПІДРОЗДІЛИ
+
 </div>
 
-<div class="card">
-<h3>ППШ</h3>
-<p>Підрозділ тактичних операцій</p>
+<div class="unit-grid">
+
+<div class="unit-card">
+
+<div class="unit-status active"></div>
+
+<div class="unit-type">
+ACTIVE
 </div>
 
-<div class="card">
-<h3>ТЦКС</h3>
-<p>Рекрутинг та комплектування</p>
+<h3>
+ПАШ
+</h3>
+
+<h4>
+Підрозділ Активного Штурму
+</h4>
+
+<p>
+
+Основний штурмовий напрям організації,
+що відповідає за координацію активних дій,
+тактичних сценаріїв,
+взаємодію груп
+та проведення структурованих RP-операцій.
+
+</p>
+
 </div>
 
-<div class="card">
-<h3>МЕД</h3>
-<p>Військова медична служба</p>
+<div class="unit-card">
+
+<div class="unit-status active"></div>
+
+<div class="unit-type">
+ACTIVE
 </div>
 
-<div class="card">
-<h3>ВОДІЇ</h3>
-<p>Транспорт та логістика</p>
+<h3>
+ПР
+</h3>
+
+<h4>
+Підрозділ Розвідників
+</h4>
+
+<p>
+
+Розвідувальний напрям,
+що займається збором інформації,
+спостереженням,
+тактичною підтримкою
+та координацією розвідки.
+
+</p>
+
+</div>
+
+<div class="unit-card">
+
+<div class="unit-status active"></div>
+
+<div class="unit-type">
+ACTIVE
+</div>
+
+<h3>
+ППШ
+</h3>
+
+<h4>
+Підрозділ Пасивного Штурму
+</h4>
+
+<p>
+
+Спеціалізований напрям,
+орієнтований на тактичну підтримку,
+координацію складних сценаріїв
+та спеціальні RP-задачі.
+
+</p>
+
+</div>
+
+<div class="unit-card">
+
+<div class="unit-status active"></div>
+
+<div class="unit-type">
+ACTIVE
+</div>
+
+<h3>
+ТЦКС
+</h3>
+
+<h4>
+Територіальний Центр Комплектування Сервера
+</h4>
+
+<p>
+
+Напрям рекрутингу,
+координації вступу,
+первинної підготовки
+та системи комплектування організації.
+
+</p>
+
+</div>
+
+<div class="unit-card">
+
+<div class="unit-status active"></div>
+
+<div class="unit-type">
+ACTIVE
+</div>
+
+<h3>
+МЕД
+</h3>
+
+<h4>
+Військові Медики
+</h4>
+
+<p>
+
+Медичний напрям,
+що відповідає за RP-медицину,
+евакуацію,
+підтримку підрозділів
+та медичну координацію.
+
+</p>
+
+</div>
+
+<div class="unit-card">
+
+<div class="unit-status active"></div>
+
+<div class="unit-type">
+ACTIVE
+</div>
+
+<h3>
+ВОДІЇ
+</h3>
+
+<h4>
+Водії Керівництва ЗСС
+</h4>
+
+<p>
+
+Логістичний та транспортний напрям,
+відповідальний за координацію транспорту,
+переміщення керівництва
+та супровід підрозділів.
+
+</p>
+
+</div>
+
+</div>
+
+<!-- NON ACTIVE -->
+
+<div class="category-title">
+
+НЕАКТИВНІ / РЕЗЕРВНІ ПІДРОЗДІЛИ
+
+</div>
+
+<div class="unit-grid">
+
+<div class="unit-card inactive">
+
+<div class="unit-status inactive-dot"></div>
+
+<div class="unit-type inactive-text">
+INACTIVE
+</div>
+
+<h3>
+ДПСС
+</h3>
+
+<h4>
+Державна Прикордонна Служба Сервера
+</h4>
+
+<p>
+
+Резервний прикордонний напрям,
+що відповідає за контроль територій,
+координацію безпеки
+та прикордонні RP-сценарії.
+
+На даний момент
+підрозділ тимчасово неактивний.
+
+</p>
+
+</div>
+
+<div class="unit-card inactive">
+
+<div class="unit-status inactive-dot"></div>
+
+<div class="unit-type inactive-text">
+INACTIVE
+</div>
+
+<h3>
+ПНО
+</h3>
+
+<h4>
+Підрозділ Національної Оборони
+</h4>
+
+<p>
+
+Резервний оборонний напрям,
+створений для підтримки структури системи
+та координації оборонних RP-сценаріїв.
+
+Підрозділ перебуває
+у неактивному стані.
+
+</p>
+
 </div>
 
 </div>
 
 </section>
 
-<!-- NEWS -->
-<section id="news" class="section">
+<section class="section" id="news">
 
-<h2>НОВИНИ</h2>
+<div class="section-header">
+
+<div class="line"></div>
+
+<span>NEWS</span>
+
+</div>
+
+<h2>
+НОВИНИ
+</h2>
+
+<p>
+
+У цьому розділі публікуються:
+оновлення структури,
+оголошення,
+внутрішні новини,
+набори,
+зміни системи
+та інша інформація організації.
+
+</p>
 
 <div id="newsContainer">
 
 <!--
-🟡 ДОДАВАЙ НОВИНИ ТУТ РУКАМИ:
 
-<div class="news-item">
-<h3>Назва новини</h3>
-<p>Текст новини...</p>
+ДОДАВАЙ НОВИНИ СЮДИ
+
+<div class="news-card">
+
+<h3>
+Назва новини
+</h3>
+
+<p>
+Текст новини
+</p>
+
 </div>
+
 -->
 
 </div>
 
 </section>
 
-<!-- RECRUIT -->
-<section id="recruit" class="section dark">
+<section class="section dark" id="join">
 
-<h2>ВСТУП ДО ЗСС</h2>
+<div class="section-header">
+
+<div class="line"></div>
+
+<span>RECRUITMENT</span>
+
+</div>
+
+<h2>
+ВСТУП ДО ЗСС
+</h2>
 
 <p>
 
-ЗСС відкритий для нових учасників.
+Організація проводить набір нових учасників.
 Кожен кандидат проходить вступний етап,
-після чого розподіляється у відповідний підрозділ.
+після чого може бути направлений
+до одного з підрозділів системи.
+
+</p>
+
+<p>
 
 Основна діяльність включає:
-збори, конференції та тренування на приватних територіях.
+конференції,
+командні збори,
+тактичні тренування,
+навчання,
+внутрішню координацію
+та розвиток RP-взаємодії між підрозділами.
 
 </p>
-
-<ul>
-
-<li>✔ Дотримання правил сервера</li>
-<li>✔ Командна робота</li>
-<li>✔ Активність</li>
-<li>✔ Проходження навчання</li>
-
-</ul>
-
-<div class="join-box">
-
-<h3>ЦЕНТР ВСТУПУ</h3>
 
 <p>
-Приєднання здійснюється через Telegram-групу.
+
+Основний акцент робиться
+на дисципліні,
+структурованій взаємодії,
+підготовці учасників
+та розвитку системи організації.
+
 </p>
 
-<a class="tg-button" href="https://t.me/+Wqcpja004VtlMjgy" target="_blank">
-▶ ПРИЄДНАТИСЯ ДО TELEGRAM
+<div class="join-panel">
+
+<div class="join-title">
+
+ЦЕНТР ВСТУПУ
+
+</div>
+
+<p>
+
+Для приєднання до системи
+перейдіть до офіційної Telegram-групи
+та залиште заявку на вступ.
+
+</p>
+
+<a href="https://t.me/+Wqcpja004VtlMjgy"
+target="_blank"
+class="join-btn">
+
+ПЕРЕЙТИ ДО TELEGRAM
+
 </a>
 
 </div>
@@ -190,15 +629,13 @@
 
 <footer>
 
-<div class="footer-logo">
-ЗСС
+<div class="footer-line"></div>
+
+<div class="footer-text">
+
+ЗСС COMMAND SYSTEM © 2026
+
 </div>
-
-<p>Командний центр військової системи сервера</p>
-
-<p class="small">
-© 2026 ЗСС Command System
-</p>
 
 </footer>
 
